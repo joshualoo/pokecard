@@ -1,0 +1,20 @@
+implementing pokeapi
+
+install vue CLI 
+use vue create 'your-app-name'
+
+install axios as a node module instead of fetch?
+- reason to use axios, read documentation
+yarn add axios 
+
+postman to work with API requests
+
+yarn serve
+- local dev server
+
+web font loader as a npm module 
+- yarn add webfontloader
+
+add bootstrap-css-only as module
+
+vuetify for ui components

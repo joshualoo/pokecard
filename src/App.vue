@@ -1,28 +1,50 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <Header/>
+      <Data/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Data from './components/Data.vue'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'animate.css';
+
+let WebFont = require('webfontloader');
+
+WebFont.load({
+  google:{
+    families :['Anton' , 'IBM Plex Mono']
+  }
+});
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Header,
+    Data
   }
+  
 }
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'IBM Plex Mono', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  padding-bottom:100px;
+}
+ul{
+  padding:0;
+}
+li{
+  list-style:none;
+}
+.welcome-msg{
+  text-align:center;
+  padding:0px 0 10px;
 }
 </style>
