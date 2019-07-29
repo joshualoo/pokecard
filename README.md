@@ -1,5 +1,7 @@
 # pokecard
 
+Playing around with pokeAPI with Vue
+
 ## Project setup
 ```
 yarn install
@@ -27,3 +29,5 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
